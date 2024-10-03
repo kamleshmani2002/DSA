@@ -2,14 +2,14 @@ public class Example_04{
     public static void main(String [] args){
         String S = "my name is pranshu tiwari";
         // if we want to split a String in multiple parts then in String class have a method split() which return the string of Array.
-        String [] details = s.split(" ");
+        String [] details = S.split(" ");
         for(String s : details){
-            System.out.print(s+ " ");
+            System.out.print(s+ "    ");
         }
         System.out.println();
         // Also we can make a character array from toCharArray() method.
         String I = "netajiShubhashchandrabose";
-        char [] arr = T.toCharArray();
+        char [] arr = I.toCharArray();
         for(char c : arr){
             System.out.print(c+ " ");
         }
@@ -23,6 +23,8 @@ public class Example_04{
         String h = I.toUpperCase();
         System.out.println(h);
 
-        
+        // for removing the front and trailing space from the String we have a mehtod called trim()
+        String hi ="  Hi This is Rahul Bhargva   ";
+        System.out.println(hi.trim());
     }
 }
