@@ -101,6 +101,54 @@ class myList{
         }
         System.out.println("]");
     }
+
+    public boolean reomove(int data){
+        Node head = Head;
+        Node prev = null;
+        while(head != null){
+            if(head.data == data && prev == null){
+                Head = Head.next;
+                size--;
+                return true;
+            }else if(head.data == data && head.next == null){
+                curr = prev;
+                prev.next =null;
+                size--;
+                return true;
+            }else if(head.data == data){
+                prev.next = head.next;
+                size--;
+                return true;
+            }
+            prev = head;
+            head = head.next;
+        }
+        return false;
+    }
+
+    public boolean reomoveAt(int index){
+        if(index < 0 || index >= size){
+            throw new IndexOutOfBoundsException();
+        }else if(index == 0){
+            Head = Head.next;
+            size--;
+            return true;
+        }
+        Node head = Head.next;
+        Node prev = head;
+        for(int i=1; i<index; i++){
+            prev = head;
+            head = head.next;
+        }
+        if(head.next == null){
+            curr = prev;
+            prev.next = null;
+        }else{
+            prev.next = head.next;
+        }
+        size--;
+        return true;
+    }
 }
 
 public class Example_01{
@@ -120,7 +168,17 @@ public class Example_01{
         list.add(5,216);
         System.out.println("56 is prsent in the list : "+list.contains(56));
         list.printLIst();
-        int v = list.get(56);
-        System.out.println(0 + " index value is "+ v);
+        // int v = list.get(56);
+        // System.out.println(0 + " index value is "+ v);
+        list.reomoveAt(4);
+        list.printLIst();
+        boolean b = list.add(241);
+        System.out.println("result of the element is add "+b);
+        int va = list.getSize();
+        list.printLIst();
+        System.out.println("size of the likedlist "+va);
+        list.reomove(241);
+    
+        list.printLIst();
     }
 }
