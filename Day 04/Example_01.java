@@ -11,6 +11,7 @@ class myList{
     Node Head  = null;
     Node curr = null;
     int size =0;
+
     public boolean add(int data){
         if(Head == null){
             Head = new Node(data);
