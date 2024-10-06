@@ -1,4 +1,4 @@
-// This is the implementation of the queue.
+// This is the implementation of the queue using the linkedlist
 
 class Node{
     int data;

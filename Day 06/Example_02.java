@@ -1,3 +1,5 @@
+// This is the implementation of the queue using the Arrays.
+
 class myQueue{
     int [] arr;
     int size =0;
@@ -26,7 +28,7 @@ class myQueue{
     public boolean isEmpty(){
         return (size == 0);
     }
-    
+
     public void printQueue(){
         if(size == 0){
             System.out.println("[]");
