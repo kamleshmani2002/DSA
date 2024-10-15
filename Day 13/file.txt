@@ -1,0 +1,5 @@
+This is the text file 
+rivision day 01 
+1. Arrays
+2. String
+3. Linkedlist
