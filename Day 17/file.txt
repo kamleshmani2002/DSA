@@ -4,4 +4,8 @@ Today we are going to learn traversal technique in tree
 1. Breath first search
 2. Depth first search
 
-1. Breath first search(Level order traversal) : 
+1. Breath first search(Level order traversal) 
+2. Depth first search
+    2.1 PreOrder traversal
+    2.3 Inorder traversal
+    2.3 Postorder traversal
