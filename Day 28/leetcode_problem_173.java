@@ -8,6 +8,10 @@ public class leetcode_problem_173{
 // int this solution Runtime complexity is same but the Space complexity is different.
 // Space complexity --> O(h) --> in the worst case will be O(n) but in this case height also will be O(n).
 
+// Follow up:
+
+// Could you implement next() and hasNext() to run in average O(1) time and use O(h) memory, where h is the height of the tree?
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
